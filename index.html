@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spreadsheet Review Showcase</title>
-    <!-- Substituído o script JIT pelo CSS estável para remover o aviso de produção -->
+    <!-- Usando versão estável do Tailwind CSS para evitar avisos de produção do script JIT -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -19,7 +18,7 @@
         .card-shadow:hover {
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
-        /* Helpers para manter o design compatível com v2 sem plugins extras */
+        /* Utilitários para compatibilidade com Tailwind v2 */
         .line-clamp-1 {
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -53,5 +52,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- Script de entrada do React adicionado para resolver o problema de tela em branco -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
